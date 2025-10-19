@@ -1,0 +1,69 @@
+1. Basics
+What is a subarray?
+Total number of subarrays in an array
+Brute-force approach to print all subarrays
+Subarray vs Subsequence
+
+2. Fixed-size Subarrays
+Fixed window sliding technique
+Max/min sum of k consecutive elements
+
+3. Variable-size Subarrays
+Sliding window (variable window)
+Min/Max length of subarray with given property (sum ≥ x, etc.)
+
+4. Sum/Count Based Subarrays
+Subarray with sum = k
+Count of subarrays with sum = k
+Subarrays with sum divisible by k
+
+5. Two Pointer Based Problems
+Subarrays with product less than k
+Longest subarray with unique elements
+Subarray with all 0s or 1s
+
+6. Prefix Sum Optimization
+Subarray sum using prefix sum
+Subarrays with equal 0s and 1s (convert 0 → -1 trick)
+Subarrays with equal number of even and odd elements
+
+7. Hash Map + Sliding Window/Prefix Sum
+Count subarrays with given XOR
+Count subarrays with equal number of positive and negative numbers
+
+
+CODING QUESTIONS
+Basic
+Print all subarrays of an array
+Count the number of subarrays in an array
+
+Fixed-size Subarrays
+Maximum sum of a subarray of size k
+Minimum average of all subarrays of size k
+Maximum product of subarray of size k
+
+Variable-size Subarrays
+Smallest subarray with sum ≥ k
+Longest subarray with sum ≤ k
+Longest subarray with sum exactly k
+
+Subarray Sum-Based
+Subarray sum equal to k (positive numbers)
+Count of subarrays with sum = k (using prefix sum + hashmap)
+Find all subarrays with sum divisible by k
+
+Two Pointer + Sliding Window
+Subarrays with product less than k
+Longest subarray with all distinct elements
+Longest subarray with at most 2 distinct elements
+
+Prefix Sum + Hash Map
+Count subarrays with equal number of 0s and 1s
+Count subarrays with equal number of even and odd elements
+Count subarrays with given XOR
+Longest subarray with equal positive and negative numbers
+
+Advanced
+Maximum sum circular subarray (Kadane + subarray logic)
+Longest subarray with sum divisible by k
+Number of subarrays with bitwise AND = k
