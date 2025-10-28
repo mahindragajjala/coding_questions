@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"math"
 )
 
@@ -49,15 +48,37 @@ func IsPrime(n int) bool {
 	}
 	return true
 }
-func main() {
-	data := IsPrime(3)
-	fmt.Println(data)
-}
 
 /*
 i below 2 is not not prime
 if 2 is prime
 if num/2 == 0 is not prime
 if number  to square root loop
-
 */
+
+// ListPrimes returns all prime numbers up to n (inclusive)
+func ListPrimes(n int) []int {
+	primes := []int{}
+
+	if n < 2 {
+		return primes
+	}
+
+	for num := 2; num <= n; num++ {
+		isPrime := true
+		sqrtNum := int(math.Sqrt(float64(num)))
+
+		for i := 2; i <= sqrtNum; i++ {
+			if num%i == 0 {
+				isPrime = false
+				break
+			}
+		}
+
+		if isPrime {
+			primes = append(primes, num)
+		}
+	}
+
+	return primes
+}
